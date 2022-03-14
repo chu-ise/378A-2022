@@ -1,0 +1,10 @@
+.history/
+.env
+.DS_Store
+workspace/
+notebooks/*.csv
+homework/*.csv
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
