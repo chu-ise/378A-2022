@@ -56,7 +56,7 @@ git status
 cd ../../../
 git checkout main
 git status
-'''
+```
 
 ## pull the changes from the github repo
 
@@ -71,4 +71,3 @@ git status
 git checkout your-branch # no -b option
 git status
 ```
-
