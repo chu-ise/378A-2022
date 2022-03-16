@@ -19,14 +19,14 @@ git init
 git add README.md
 git commit -m "first commit"
 git branch -M main
-git remote add origin https://github.com/yjlee-biz/378A.git
+git remote add origin https://github.com/your-github-id/378A-2022.git
 git push -u origin main
 ```
 
 ### …or push an existing repository from the command line
 
 ```sh
-git remote add origin https://github.com/yjlee-biz/378A.git
+git remote add origin https://github.com/your-github-id/378A-2022.git
 git branch -M main
 git push -u origin main
 ```
@@ -49,7 +49,7 @@ Here's the fun part! Hit 'Fork'. Now you've got your own version! Go to the page
 ## clone the epository
 
 ```sh
-git clone https://github.com/yjlee-biz/411A-2022.git
+git clone https://github.com/your-github-id/378A-2022.git
 ```
 
 to your local machine. Hooray! You have the code on your local machine now.
@@ -59,8 +59,8 @@ to your local machine. Hooray! You have the code on your local machine now.
 Use the following commands to add the 'upsteam' (original project location) as a remote branch so that you can get _updates_ of the original repo into your branch.
 
 ```sh
-cd 411A-2022
-git remote add --track main upstream https://github.com/chu-ise/411A-2022.git
+cd 378A-2022
+git remote add --track main upstream https://github.com/chu-ise/378A-2022.git
 ```
 
 This will add the original project as a remote named 'upstream'. To get the code, type:
@@ -200,7 +200,7 @@ If you're on the receiving end of a pull request, how do you merge the changes? 
 
 ```
 git checkout main
-git remote add contributor https://github.com/yjlee-biz/378A.git
+git remote add contributor https://github.com/your-github-id/378A-2022.git
 git fetch contributor
 git merge contributor/newfeature
 git push origin main
