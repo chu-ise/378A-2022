@@ -79,7 +79,7 @@ Now you'll have an up-to-date version of the upstream code in your current branc
 
 ## Setting Up A Your Homework Branch
 
-![How to GitHub Guide Development Branch](figs/4.gif "How to GitHub Development Branch")
+![How to GitHub Guide Development Branch](figs/4.png "How to GitHub Development Branch")
 
 Now you're getting ready to start hacking, you'll want to switch off of the 'main' branch and onto a different branch for your homework. It's **important** to do this because you can only have _one_ **Pull Request** _per branch_, so if you want to submit more than one fix, you'll need to have multiple branches.
 
