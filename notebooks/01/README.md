@@ -56,9 +56,6 @@ to your local machine. Hooray! You have the code on your local machine now.
 
 ## Make Your Fork Track the Original Upstream Repo
 
-![How to GitHub Guide Hardcore Fork](figs/bbNRs.png "How to GitHub Guide Fork")  
-_It's a fork.._
-
 Use the following commands to add the 'upsteam' (original project location) as a remote branch so that you can get _updates_ of the original repo into your branch.
 
 ```sh
@@ -131,9 +128,6 @@ git commit -m "This is my first homework -final edition-"
 ```
 
 ## Squashing Your Commits
-
-![How to GitHub Guide Squash Commits](figs/5.png "How to GitHub Squash Commits")  
-_Squash.._
 
 Before you submit your pull request back upstream, you'll want to **squash** these commits into a small handful of well-labeled commits. To do this, we're going to use the **git rebase** command. First, take a look at the commits we've made with _git log_ and figure out the commits that we want to squash. If we wanted to squash the last 2 commits into one, we'd open up an an interactive rebase like this:
 
