@@ -1,210 +1,107 @@
-# How to use GitHub: Fork, branch, track, squash and pull request
+# :wave: The Basics of GitHub 
 
-This guide will teach you how to properly contribute to open source projects on GitHub. It assumes that you already know about how to use **Git** for version control and that you already have a GitHub account.
+## 🤓 Course overview and learning outcomes 
 
-## Getting Started
+The goal of this course is to give you a brief introduction to GitHub. We’ll also provide you with materials for further learning and a few ideas to get you started on our platform. 🚀
 
-### Global setup:
+## :octocat: Git and GitHub
 
-```sh
-git config --global user.name "Your Name"
-git config --global user.email you@example.com
-```
+Git is a **distributed Version Control System (VCS)**, which means it is a useful tool for easily tracking changes to your code, collaborating, and sharing. With Git you can track the changes you make to your project so you always have a record of what you’ve worked on and can easily revert back to an older version if need be. It also makes working with others easier—groups of people can work together on the same project and merge their changes into one final source!
 
-### … create a new repository on the command line
+GitHub is a way to use the same power of Git all online with an easy-to-use interface. It’s used across the software world and beyond to collaborate and maintain the history of projects.
 
-```sh
-echo "# 378A" >> README.md
-git init
-git add README.md
-git commit -m "first commit"
-git branch -M main
-git remote add origin https://github.com/your-github-id/378A-2022.git
-git push -u origin main
-```
+GitHub is home to some of the most advanced technologies in the world. Whether you're visualizing data or building a new game, there's a whole community and set of tools on GitHub that can get you to the next step. This course starts with the basics of GitHub, but we'll dig into the rest later.
 
-### …or push an existing repository from the command line
+## :octocat: Understanding the GitHub flow 
 
-```sh
-git remote add origin https://github.com/your-github-id/378A-2022.git
-git branch -M main
-git push -u origin main
-```
+The GitHub flow is a lightweight workflow that allows you to experiment and collaborate on your projects easily, without the risk of losing your previous work.
 
-_GitHub displays these instructions when you start a new project._
+### Repositories
 
-GitHub is pretty great about giving advice to users starting new repositories, but it isn't very helpful when it comes to contributing changes back to other projects. Hopefully, this guide will help.
+A repository is where your project work happens--think of it as your project folder. It contains all of your project’s files and revision history.  You can work within a repository alone or invite others to collaborate with you on those files.
 
-## Making Your Fork
+### Cloning 
 
-![How to GitHub Guide Hardcore Forking Action](figs/1.png "How to GitHub Guide Hardcore Forking Action")  
-_Hardcore Forking Action_
+When a repository is created with GitHub, it’s stored remotely in the ☁️. You can clone a repository to create a local copy on your computer and then use Git to sync the two. This makes it easier to fix issues, add or remove files, and push larger commits. You can also use the editing tool of your choice as opposed to the GitHub UI. Cloning a repository also pulls down all the repository data that GitHub has at that point in time, including all versions of every file and folder for the project! This can be helpful if you experiment with your project and then realize you liked a previous version more. 
+To learn more about cloning, read ["Cloning a Repository"](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository). 
 
-![](figs/2.png)
+### Committing and pushing
+**Committing** and **pushing** are how you can add the changes you made on your local machine to the remote repository in GitHub. That way your instructor and/or teammates can see your latest work when you’re ready to share it. You can make a commit when you have made changes to your project that you want to “checkpoint.” You can also add a helpful **commit message** to remind yourself or your teammates what work you did (e.g. “Added a README with information about our project”).
 
-Here's the fun part! Hit 'Fork'. Now you've got your own version! Go to the page, get the ssh: url from the box at the top and then
+Once you have a commit or multiple commits that you’re ready to add to your repository, you can use the push command to add those changes to your remote repository. Committing and pushing may feel new at first, but we promise you’ll get used to it 🙂
 
-![clone repo](figs/3.png)
+## 💻 GitHub terms to know 
 
-## clone the epository
+### Repositories 
+We mentioned repositories already, they are where your project work happens, but let’s talk a bit more about the details of them! As you work more on GitHub you will have many repositories which may feel confusing at first. Fortunately, your ["GitHub dashboard"](https://docs.github.com/en/github/setting-up-and-managing-your-github-user-account/about-your-personal-dashboard) helps to easily navigate to your repositories and see useful information about them. Make sure you’re logged in to see it!
 
-```sh
-git clone https://github.com/your-github-id/378A-2022.git
-```
+Repositories also contain **README**s. You can add a README file to your repository to tell other people why your project is useful, what they can do with your project, and how they can use it. We are using this README to communicate how to learn Git and GitHub with you. 😄 
+To learn more about repositories read ["Creating, Cloning, and Archiving Repositories](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/about-repositories) and ["About README's"](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/about-readmes). 
 
-to your local machine. Hooray! You have the code on your local machine now.
+### Branches
+You can use branches on GitHub to isolate work that you do not want merged into your final project just yet. Branches allow you to develop features, fix bugs, or safely experiment with new ideas in a contained area of your repository. Typically, you might create a new branch from the default branch of your repository—main. This makes a new working copy of your repository for you to experiment with. Once your new changes have been reviewed by a teammate, or you are satisfied with them, you can merge your changes into the default branch of your repository.
+To learn more about branching, read ["About Branches"](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/about-branches).
 
-## Make Your Fork Track the Original Upstream Repo
+### Forks
+A fork is another way to copy a repository, but is usually used when you want to contribute to someone else’s project. Forking a repository allows you to freely experiment with changes without affecting the original project and is very popular when contributing to open source software projects!
+To learn more about forking, read ["Fork a repo"](https://docs.github.com/en/github/getting-started-with-github/fork-a-repo)
 
-Use the following commands to add the 'upsteam' (original project location) as a remote branch so that you can get _updates_ of the original repo into your branch.
+### Pull requests
+When working with branches, you can use a pull request to tell others about the changes you want to make and ask for their feedback. Once a pull request is opened, you can discuss and review the potential changes with collaborators and add more changes if need be. You can add specific people as reviewers of your pull request which shows you want their feedback on your changes! Once a pull request is ready-to-go, it can be merged into your main branch.
+To learn more about pull requests, read ["About Pull Requests"](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/about-pull-requests). 
 
-```sh
-cd 378A-2022
-git remote add --track main upstream https://github.com/chu-ise/378A-2022.git
-```
 
-This will add the original project as a remote named 'upstream'. To get the code, type:
+### Issues
+Issues are a way to track enhancements, tasks, or bugs for your work on GitHub. Issues are a great way to keep track of all the tasks you want to work on for your project and let others know what you plan to work on. You can also use issues to tell a favorite open source project about a bug you found or a feature you think would be great to add!
 
-```sh
-git fetch upstream
-```
+For larger projects, you can keep track of many issues on a project board. GitHub Projects help you organize and prioritize your work and you can read more about them [in this "About Project boards document](https://docs.github.com/en/github/managing-your-work-on-github/about-project-boards). You likely won’t need a project board for your assignments, but once you move on to even bigger projects, they’re a great way to organize your team’s work!
+You can also link together pull requests and issues to show that a fix is in progress and to automatically close the issue when someone merges the pull request.
+To learn more about issues and linking them to your pull requests, read ["About Issues"](https://docs.github.com/en/github/managing-your-work-on-github/about-issues). 
 
-Then, to merge it into your own project, type:
+### Your user profile
 
-```sh
-git merge upstream/main
-```
+Your profile page tells people the story of your work through the repositories you're interested in, the contributions you've made, and the conversations you've had. You can also give the world a unique view into who you are with your profile README. You can use your profile to let future employers know all about you! 
+To learn more about your user profile and adding and updating your profile README, read ["Managing Your Profile README"](https://docs.github.com/en/github/setting-up-and-managing-your-github-profile/managing-your-profile-readme). 
 
-Now you'll have an up-to-date version of the upstream code in your current branch.
+### Using markdown on GitHub 
 
-## Setting Up A Your Homework Branch
+You might have noticed already, but you can add some fun styling to your issues, pull requests, and files. ["Markdown"](https://guides.github.com/features/mastering-markdown/) is an easy way to style your issues, pull requests, and files with some simple syntax. This can be helpful to organize your information and make it easier for others to read. You can also drop in gifs and images to help convey your point!
+To learn more about using GitHub’s flavor of markdown, read ["Basic Writing and Formatting Syntax"](https://docs.github.com/en/github/writing-on-github/basic-writing-and-formatting-syntax). 
 
-![How to GitHub Guide Development Branch](figs/4.png "How to GitHub Development Branch")
+### Engaging with the GitHub community
 
-Now you're getting ready to start hacking, you'll want to switch off of the 'main' branch and onto a different branch for your homework. It's **important** to do this because you can only have _one_ **Pull Request** _per branch_, so if you want to submit more than one fix, you'll need to have multiple branches.
+The GitHub community is vast. There are many types of people who use GitHub in their day to day—students like you, professional developers, hobbyists working on open source projects, and explorers who are just jumping into the world of software development on their own. There are many ways you can interact with the larger GitHub community, but here are three places where you can start. 
 
-Make a new branch and then switch to it like this: `git checkout -b your_id/homework_no`
+#### Starring repositories 
 
-```sh
-git checkout -b test_id/homework01
-```
+If you find a repository interesting or you want to keep track of it, star it! When you star a repository it’s also used as a signal to surface better recommendations on github.com/explore. If you’d like to get back to your starred repositories you can do so via your user profile. 
+To learn  more about starring repositories, read ["Saving Repositories with Stars"](https://docs.github.com/en/github/getting-started-with-github/saving-repositories-with-stars). 
 
-Now you're on your new branch. You can confirm this by simply typing:
+#### Following users 
 
-```sh
-git branch
-```
+You can follow people on GitHub to receive notifications about their activity and discover projects in their communities. When you follow a user, their public GitHub activity will show up on your dashboard so you can see all the cool things they are working on. 
+To learn more about following users, read ["Following People"](https://docs.github.com/en/github/getting-started-with-github/following-people).
 
-![](figs/6.png)
+#### Browsing GitHub Explore 
 
-## Hack! Do your works!
+GitHub Explore is a great place to do just that … explore :smile: You can find new projects, events, and developers to interact with.
 
-This part's up to you. Hack along as you normally would until the code is in the state where you're happy with it, it performs the task as described and it passes all the tests you've written for it. Yayyyy!
+You can check out the GitHub Explore website [at github.com/explore](https://github.com/explore). The more you intereact with GitHub the more tailored your Explore view will be. 
 
-#### make your submit folder and copy the homework
+## 📝 Optional next steps 
 
-```sh
-mkdir -p homework/submit/your_id
-cp homework/homework_01.ipynb homework/submit/your_id
-```
+* Open a pull request and let your teacher know that you’ve finished this course.  
+* Create a new markdown file in this repository. Let them know what you learned and what you are still confused about! Experiment with different styles!
+* Create your profile README. Let the world know a little bit more about you! What are you interested in learning? What are you working on? What's your favorite hobby? Learn more about creating your profile README in the document, ["Managing Your Profile README"](https://docs.github.com/en/github/setting-up-and-managing-your-github-profile/managing-your-profile-readme).
+* Go to your user dashboard and create a new repository. Experiment with the features within that repository to familiarize yourself with them. 
+* [Let us know what you liked or didn’t like about the content of this course](https://support.github.com/contact/education). What would you like to see more of? What would be interesting or helpful to your learning journey? 
 
-**Do your works!!**
-
-#### add your homework to the git repo
-
-```sh
-git add homework/submit/your_id/homework_01.ipynb
-git status
-```
-
-![](figs/7.png)
-
-#### commit the changes to the repo
-
-```sh
-git commit -m "This is my first homework -1st edition-"
-# modify your work and commit again until it' done
-git commit -m "This is my first homework -final edition-"
-```
-
-## Squashing Your Commits
-
-Before you submit your pull request back upstream, you'll want to **squash** these commits into a small handful of well-labeled commits. To do this, we're going to use the **git rebase** command. First, take a look at the commits we've made with _git log_ and figure out the commits that we want to squash. If we wanted to squash the last 2 commits into one, we'd open up an an interactive rebase like this:
-
-```sh
-git log
-```
-
-![](figs/8.png)
-
-```sh
-git rebase -i HEAD~2
-```
-
-This will bring you into your editor with some text that will look something like this:
-
-```sh
-pick 84b4fd8 This is my first homework -1st edition-
-pick ed9939e This is my first homework (final edition)
-```
-
-To squash those commits into one, change to something like this:
-
-```sh
-pick 84b4fd8 This is my first homework -1st edition-
-squash ed9939e This is my first homework (final edition)
-```
-
-Then, save/quit, and you'll be brought to into another editor session. Describe the changes as well as you can and save/quit again.
-
-```sh
-# This is a combination of 2 commits.
-# This is the 1st commit message:
-
-This is my first homework -1st edition-
-
-# This is the commit message #2:
-
-This is my first homework (final edition)
-```
-
-![](figs/9.png)
-
-You've squashed your commits into one nice one. Now you're ready to submit a pull request.
-
-## Submitting a Pull Request
-
-Once you've commited and squashed your changes, push them to your remote like this:
-
-```
-git push origin test_id/homework01
-```
-
-![](figs/11.png)
-
-Then go to that page on GitHub and change branches to the one for your new feature.
-
-![How to GitHub Guide Submitting Pull Requests](figs/12.png)
-_Submit a Pull Request!_
-
-Then, click on the little button that says 'Pull Request'. This will bring you to a page asking you to describe your change. Describe it thoroughly.
-
-![How to GitHub Guide Describing Pull Requests](figs/13.png)
-_Describe your Pull Request._
-
-Then press 'Submit Pull Request'. Hooray! You did it. Now, you're not quite done yet. If the maintainer finds some problems with your code, they won't want to pull your changes until you fix them. Fortunately, whenever you commit and push more things to that branch of your code, they will be included in that pull request until it is closed.
-
-## Extra: Accepting And Merging a Pull Request
-
-If you're on the receiving end of a pull request, how do you merge the changes? Easy - press the button! GitHub now has an auto-merge button which does everything for you in one click. However, it doesn't always work, in which case you'll have to do the merge on your own machine, like so:
-
-```
-git checkout main
-git remote add contributor https://github.com/your-github-id/378A-2022.git
-git fetch contributor
-git merge contributor/newfeature
-git push origin main
-
-```
-
-And then their changes will be properly merged into your main branch.
+## 📚  Resources 
+* [A short video explaining what GitHub is](https://www.youtube.com/watch?v=w3jLJU7DT5E&feature=youtu.be) 
+* [Git and GitHub learning resources](https://docs.github.com/en/github/getting-started-with-github/git-and-github-learning-resources) 
+* [Understanding the GitHub flow](https://guides.github.com/introduction/flow/)
+* [How to use GitHub branches](https://www.youtube.com/watch?v=H5GJfcp3p4Q&feature=youtu.be)
+* [Interactive Git training materials](https://githubtraining.github.io/training-manual/#/01_getting_ready_for_class)
+* [GitHub's Learning Lab](https://lab.github.com/)
+* [Education community forum](https://education.github.community/)
+* [GitHub community forum](https://github.community/)
